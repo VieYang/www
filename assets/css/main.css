@@ -2122,6 +2122,11 @@
 				ul.icons li .icon:before {
 					font-size: 1.25em;
 				}
+			
+			ul.icons img {
+				width: 100px;
+				height: 100px;			
+			}
 
 		ul.actions {
 			cursor: default;
@@ -2435,6 +2440,23 @@
 				width: 100%;
 			}
 
+		.features article .icon {
+			display: inline-block;
+			padding-right: 2.5em;
+			vertical-align: middle;
+			width: 48%;
+			text-align: center;
+			font-size: 50px;
+		}
+		
+		.features article .fa-map-marker {
+			color: red;
+		}
+		
+		.features article .fa-university {
+			color: #A7282F;
+		}
+		
 		.features article .inner {
 			display: inline-block;
 			vertical-align: middle;
@@ -2444,6 +2466,14 @@
 			.features article .inner > :last-child {
 				margin-bottom: 0;
 			}
+			
+		.features article:first-child a:hover {
+			color: red !important;
+		}
+		
+		.features article:nth-child(2)  a:hover {
+			color: #A7282F !important;
+		}
 
 /* Header */
 
