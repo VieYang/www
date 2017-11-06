@@ -74,6 +74,35 @@
 										<h2>Vie Yang</h2>
 										<p>Welcome </p>
 									</header>
+									<a class="coinbase-widget"
+       id="coinbase_widget"
+       data-address=""
+       data-amount=""
+       data-code="a0eb4a00-1fb4-5b50-8383-b1bc9391e48f"
+       data-currency="USD"
+       data-crypto_currency="BTC"
+       href="">Buy with Coinbase</a>
+    
+    <script type='text/javascript' id='coinbase_widget_loader' class='coinbase-widget-async-loader'>
+      document.currentScript.src ='';
+      (function() {
+        function asyncLoad() {
+          var s = document.createElement('script');
+          s.type = 'text/javascript';
+          s.async = true;
+          var theUrl = 'https://buy.coinbase.com/static/widget.js';
+          s.src = theUrl+ (theUrl.indexOf("?") >= 0 ? '&' : '?') + 'ref=' + encodeURIComponent(window.location.href);
+          var embedder = document.getElementById('coinbase_widget_loader');
+          embedder.parentNode.insertBefore(s, embedder);
+        }
+        if (window.attachEvent) {
+          window.attachEvent('onload', asyncLoad);
+        } else {
+          window.addEventListener('load', asyncLoad, false);
+        }
+      })();
+    </script>
+    
 									<p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.</p>
 								</div>
 							</section>
